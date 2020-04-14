@@ -8,7 +8,7 @@ script:
   - echo "skipping tests"
 deploy:
   provider: releases
-  api_key: "38d082192f3cf333187ed9dcbf7f3fc4aaaabd57"
+  api_key: "99ba167725c816ad280852bfcfaf7dcdd136baee"
   file: "testing-pk"
   skip_cleanup: true
   draft: true
