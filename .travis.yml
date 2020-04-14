@@ -8,3 +8,11 @@ script:
   - echo "skipping tests"
 before_deploy:
   - echo "Before deploy"
+deploy:
+  skip_cleanup: true
+  provider: releases
+  api_key: "38d082192f3cf333187ed9dcbf7f3fc4aaaabd57"
+  file: "testing-pk"
+  skip_cleanup: true
+  on:
+    tags: true
