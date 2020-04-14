@@ -4,7 +4,7 @@ node_js:
 script:
   - touch env.txt
   - echo BASE_NAME=$name > env.txt
-  - cat .env
+  - cat env.txt
   - echo "skipping tests"
 before_deploy:
   - echo "Before deploy"
