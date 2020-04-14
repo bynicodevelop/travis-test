@@ -6,8 +6,6 @@ script:
   - echo BASE_NAME=$name > env.txt
   - cat env.txt
   - echo "skipping tests"
-before_deploy:
-  - echo "Before deploy"
 deploy:
   skip_cleanup: true
   provider: releases
