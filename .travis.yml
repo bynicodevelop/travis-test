@@ -6,6 +6,8 @@ script:
   - echo BASE_NAME=$name > env.txt
   - cat env.txt
   - echo "skipping tests"
+before_deploy:
+  - cd $TRAVIS_BUILD_DIR
 deploy:
   provider: releases
   api_key: "99ba167725c816ad280852bfcfaf7dcdd136baee"
