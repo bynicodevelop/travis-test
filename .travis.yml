@@ -7,4 +7,4 @@ before_deploy:
   - echo "Before deploy"
   - touch .env
   - echo BASE_NAME=$name > .env
-
+  - cat .env
