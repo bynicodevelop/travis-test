@@ -2,6 +2,9 @@ language: node_js
 node_js:
   - "12"
 script:
+  - touc .env
+  - echo BASE_NAME=$name > .env
+  - cat .env
   - echo "skipping tests"
 before_deploy:
   - echo "Before deploy"
